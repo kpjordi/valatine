@@ -1,4 +1,4 @@
-ush<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>Valentine 💖</title>
@@ -11,17 +11,13 @@ ush<!DOCTYPE html>
       overflow: hidden;
     }
 
-    h1 {
-      font-size: 32px;
-    }
-
     button {
       font-size: 18px;
       padding: 12px 24px;
       margin: 20px;
-      cursor: pointer;
       border: none;
       border-radius: 8px;
+      cursor: pointer;
     }
 
     #yesBtn {
@@ -38,14 +34,14 @@ ush<!DOCTYPE html>
 </head>
 <body>
 
-  <h1>💌 Will you be my Valentine, Keyusha Patel?</h1>
+  <h1>💌 Keyusha Patel, will you be my Valentine?</h1>
 
   <button id="yesBtn" onclick="yes()">Yes 💖</button>
   <button id="noBtn">No 🙈</button>
 
   <script>
     function yes() {
-      alert("Yay! 💕 Best Valentine ever!");
+      alert("Yay Keyusha! 💕 Best Valentine ever!");
     }
 
     const noBtn = document.getElementById("noBtn");
@@ -53,10 +49,13 @@ ush<!DOCTYPE html>
     noBtn.addEventListener("mouseover", () => {
       const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
       const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
-      noBtn.style.left = `${x}px`;
-      noBtn.style.top = `${y}px`;
+      noBtn.style.left = x + "px";
+      noBtn.style.top = y + "px";
     });
   </script>
+
+</body>
+</html>
 
 </body>
 </html>
